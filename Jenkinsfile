@@ -8,7 +8,7 @@ pipeline {
 	agent any
 	
 	tools {
-        maven "maven3"
+        maven "MAVEN3"
         jdk "OracleJDK8"
     }
 	
@@ -20,7 +20,7 @@ pipeline {
         CENTRAL_REPO = 'vpro-maven-central'
         NEXUS_VERSION = "nexus3"
         NEXUS_PROTOCOL = "http"
-        NEXUSIP = '172.31.40.209'
+        NEXUSIP = '172.31.14.79'
         NEXUSPORT = '8081'
         NEXUS_GRP_REPO = 'vpr-maven-group'
         NEXUS_LOGIN = 'nexuslogin'
@@ -129,7 +129,7 @@ pipeline {
                 extraVars   : [
                    	USER: "admin",
                     PASS: "${NEXUSPASS}",
-			        nexusip: "172.31.5.4",
+			        nexusip: "172.31.14.79",
 			        reponame: "vprofile-release",
 			        groupid: "QA",
 			        time: "${env.BUILD_TIMESTAMP}",
