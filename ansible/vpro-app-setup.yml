@@ -96,7 +96,7 @@
 #      notify:
 #       - Restart Tomcat
 #      tags:
-#       - deploy
+#  ###     - deploy
 
   handlers:
    - name: Restart Tomcat
